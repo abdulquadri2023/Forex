@@ -1,0 +1,353 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="https://nerofxinvest.com/dashboard/user/images/favicon-32x32.png" type="image/png" />
+    <!--plugins-->
+    <link href="https://nerofxinvest.com/dashboard/user/plugins/notifications/css/lobibox.min.css" rel="stylesheet"/>
+    <link href="https://nerofxinvest.com/dashboard/user/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
+    <link href="https://nerofxinvest.com/dashboard/user/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <link href="https://nerofxinvest.com/dashboard/user/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="https://nerofxinvest.com/dashboard/user/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+    <!-- loader-->
+    <link href="https://nerofxinvest.com/dashboard/user/css/pace.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0pFoAhQ1UMy-A9giHgXg0tQpAglWsisT_Q09mpXTtqbSPr5Bto45gNxqgnf6cGoRDrflKl38wnX52QLic4SGNw" charset="UTF-8"></script><script src="https://nerofxinvest.com/dashboard/user/js/pace.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://nerofxinvest.com/dashboard/user/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="https://nerofxinvest.com/dashboard/user/css/app.css" rel="stylesheet">
+    <link href="https://nerofxinvest.com/dashboard/user/css/icons.css" rel="stylesheet">
+    <!-- Theme Style CSS -->
+    <link rel="stylesheet" href="https://nerofxinvest.com/dashboard/user/css/dark-theme.css" />
+    <link rel="stylesheet" href="https://nerofxinvest.com/dashboard/user/css/semi-dark.css" />
+    <link rel="stylesheet" href="https://nerofxinvest.com/dashboard/user/css/header-colors.css" />
+
+    <title>Referrals - Nerofx Invest</title>
+</head>
+
+<body onload="info_noti()">
+<!--wrapper-->
+<div class="wrapper">
+    <!--sidebar wrapper -->
+    <div class="sidebar-wrapper" data-simplebar="true">
+        <div class="sidebar-header">
+            <div>
+                <img src="https://nerofxinvest.com/home/images/nerofxinvest.png" class="logo-icon" alt="logo icon"
+                style="width:40px;">
+            </div>
+            <div>
+                <h4 class="logo-text">Nerofx Invest</h4>
+            </div>
+            <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+            </div>
+        </div>
+        <!--navigation-->
+        <ul class="metismenu" id="menu">
+            <li>
+                <a href="https://nerofxinvest.com/account/dashboard">
+                    <div class="parent-icon"><i class='bx bx-cookie'></i>
+                    </div>
+                    <div class="menu-title">Dashboard</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://nerofxinvest.com/account/new_investment">
+                    <div class="parent-icon"><i class='bx bx-chart'></i>
+                    </div>
+                    <div class="menu-title">New Investment</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://nerofxinvest.com/account/investments">
+                    <div class="parent-icon"><i class='bx bx-file-blank'></i>
+                    </div>
+                    <div class="menu-title">Investments</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://nerofxinvest.com/account/withdrawals">
+                    <div class="parent-icon"><i class='bx bx-money'></i>
+                    </div>
+                    <div class="menu-title">Withdrawals</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://nerofxinvest.com/account/new_withdrawals">
+                    <div class="parent-icon"><i class='bx bx-send'></i>
+                    </div>
+                    <div class="menu-title">New Withdrawals</div>
+                </a>
+            </li>
+            <li class="menu-label">UI Elements</li>
+            <li>
+                <a href="https://nerofxinvest.com/account/referral">
+                    <div class="parent-icon"><i class='bx bx-user-plus'></i>
+                    </div>
+                    <div class="menu-title">Referrals</div>
+                </a>
+            </li>
+            <li>
+                <a href="https://nerofxinvest.com/account/settings">
+                    <div class="parent-icon"><i class='bx bx-cog'></i>
+                    </div>
+                    <div class="menu-title">Settings</div>
+                </a>
+            </li>
+                        <li>
+                <a href="https://nerofxinvest.com/account/logout">
+                    <div class="parent-icon"><i class='bx bx-log-out'></i>
+                    </div>
+                    <div class="menu-title">Logout</div>
+                </a>
+            </li>
+        </ul>
+        <!--end navigation-->
+    </div>
+    <!--end sidebar wrapper -->
+    <!--start header -->
+    <header>
+        <div class="topbar d-flex align-items-center">
+            <nav class="navbar navbar-expand">
+                <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+                </div>
+                <div class="top-menu ms-auto">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item mobile-search-icon">
+                            <a class="nav-link" href="#">	<i class='bx bx-search'></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-large">
+
+                        </li>
+                        <li class="nav-item dropdown dropdown-large">
+
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="javascript:;">
+                                    <div class="msg-header">
+                                        <p class="msg-header-title">Notifications</p>
+                                        <p class="msg-header-clear ms-auto">Marks all as read</p>
+                                    </div>
+                                </a>
+                                <div class="header-notifications-list">
+
+                                </div>
+                                <a href="javascript:;">
+                                    <div class="text-center msg-footer">View All Notifications</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-large">
+
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="javascript:;">
+                                    <div class="msg-header">
+                                        <p class="msg-header-title">Messages</p>
+                                        <p class="msg-header-clear ms-auto">Marks all as read</p>
+                                    </div>
+                                </a>
+                                <div class="header-message-list">
+
+                                </div>
+                                <a href="javascript:;">
+                                    <div class="text-center msg-footer">View All Messages</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-box dropdown">
+                    <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://ui-avatars.com/api/?name=silny" class="user-img" alt="user avatar">
+                        <div class="user-info ps-3">
+                            <p class="user-name mb-0">silny</p>
+                            <p class="designattion mb-0">Investor</p>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+
+                        <li><a class="dropdown-item" href="https://nerofxinvest.com/account/logout"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--end header -->
+
+    <!--start page wrapper -->
+    <div class="page-wrapper">
+        <div class="page-content">
+                <!-- Content Row -->
+    <div class="row">
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-3 col-md-6 mb-4 mx-auto">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Referral Balance</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                $0.00
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DataTales Example -->
+    <div class="card">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">
+                Link
+            </h6>
+        </div>
+        <div class="card-body row">
+            <div class="col-md-12 mx-auto">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6 mx-auto">
+                            <label for="inputEmail4">Referral Link</label>
+                            <input type="text" class="form-control" id="inputEmail4"
+                                   value="https://nerofxinvest.com/auth/register?referral=silny001" readonly>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button  class="btn btn-primary copy"
+                                data-clipboard-target="#inputEmail4">copy</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Referrals</h6>
+        </div>
+        <div class="card-body">
+                        <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>Reference</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                        </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>Reference</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!--end page wrapper -->
+    <!--start overlay-->
+    <div class="overlay toggle-icon"></div>
+    <!--end overlay-->
+    <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <!--End Back To Top Button-->
+    <footer class="page-footer">
+        <p class="mb-0">Copyright &copy; Nerofx Invest 2023</p>
+    </footer>
+</div>
+<!--end wrapper-->
+<!-- Bootstrap JS -->
+<script src="https://nerofxinvest.com/dashboard/user/js/bootstrap.bundle.min.js"></script>
+<!--plugins-->
+<script src="https://nerofxinvest.com/dashboard/user/js/jquery.min.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/simplebar/js/simplebar.min.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/metismenu/js/metisMenu.min.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/chartjs/js/Chart.min.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/chartjs/js/Chart.extension.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+<!--notification js -->
+<script src="https://nerofxinvest.com/dashboard/user/plugins/notifications/js/lobibox.min.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/plugins/notifications/js/notifications.min.js"></script>
+<script src="https://nerofxinvest.com/dashboard/user/js/index.js"></script>
+<!--app JS-->
+<script src="https://nerofxinvest.com/dashboard/user/js/app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
+<script>
+    new ClipboardJS('.copy');
+</script>
+
+<!-- Google language start -->
+<style>
+
+    #google_translate_element {
+        z-index: 9999999;
+        position: fixed;
+        bottom: 25px;
+        left: 15px;
+    }
+
+    .goog-te-gadget {
+        font-family: Roboto, "Open Sans", sans-serif !important;
+        text-transform: uppercase;
+    }
+    .goog-te-gadget-simple
+    {
+        padding: 0px !important;
+        line-height: 1.428571429;
+        color: white;
+        vertical-align: middle;
+        background-color: black;
+        border: 1px solid #a5a5a599;
+        border-radius: 4px;
+        float: right;
+        margin-top: -4px;
+        z-index: 999999;
+    }
+    .goog-te-banner-frame.skiptranslate
+    {
+        display: none !important;
+        color: white;
+    }
+    .goog-te-gadget-icon
+    {
+        background: none !important;
+        display: none;
+        color: white;
+    }
+    .goog-te-gadget-simple .goog-te-menu-value
+    {
+        font-size: 12px;
+        color: white;
+        font-family: 'Open Sans' , sans-serif;
+    }
+</style>
+<div id="google_translate_element">
+</div>
+<script type="text/javascript">
+    window.onload = function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+    }
+</script>
+<script src="//code.tidio.co/39xy1faan2fodypi8jymfd9jehbqqnwh.js" async></script>
+</body>
+</html>

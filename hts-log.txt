@@ -1,0 +1,36 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 27 Jun 2023 01:46:41 at https://nerofxinvest.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://nerofxinvest.com -O1 "C:\Web_designing\second_clone_training" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/index38cd?a=faq (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/home/img/in-equity-11-bg.jpeg (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/eth.png (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/ap.png (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/dash.png (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/gg.png (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/xrp.png (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/es.png (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/ltc.png (from https://nerofxinvest.com/)
+01:49:16	Error: 	"Not Found" (404) at link https://nerofxinvest.com/ms.png (from https://nerofxinvest.com/)
+01:49:16	Warning: 	Retry after error -5 (error:00000001:lib(0):func(0):reason(1)) at link https://code.tidio.co:443/39xy1faan2fodypi8jymfd9jehbqqnwh.js (from https://nerofxinvest.com/)
+01:49:16	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nerofxinvest.com/home/fonts/archivo-v9-latin-regular.woff (from https://nerofxinvest.com/home/css/style.css)
+01:49:16	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nerofxinvest.com/home/fonts/archivo-v9-latin-300.woff (from https://nerofxinvest.com/home/css/style.css)
+01:49:16	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://nerofxinvest.com/home/fonts/fa-brands-400.woff (from https://nerofxinvest.com/home/css/style.css)
+01:49:17	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://nerofxinvest.com/home/fonts/fa-solid-900.woff (from https://nerofxinvest.com/home/css/style.css)
+01:49:17	Warning: 	Retry after error -5 (error:00000005:lib(0):func(0):DH lib) at link https://nerofxinvest.com/home/img/blockit/in-gallery-image-2.jpg (from https://nerofxinvest.com/about)
+01:49:17	Error: 	"Not Found" (404) at link https://nerofxinvest.com/home/img/in-equity-11-bg.jpg (from https://nerofxinvest.com/about)
+01:49:17	Warning: 	Link https://nerofxinvest.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+01:49:20	Error: 	"Not Found" (404) at link https://nerofxinvest.com/_img/blockit/in-team-background-1.html (from https://nerofxinvest.com/buy-btc)
+01:52:52	Error: 	"Not Found" (404) at link https://nerofxinvest.com/home/img/blog/blog-img1.jpg (from https://nerofxinvest.com/privacy)
+01:52:52	Warning: 	Retry after error -5 (error:00000001:lib(0):func(0):reason(1)) at link https://code.tidio.co:443/39xy1faan2fodypi8jymfd9jehbqqnwh.js (from https://nerofxinvest.com/)
+01:52:52	Warning: 	Retry after error -4 (No data (connection closed)) at link https://nerofxinvest.com/home/fonts/fa-brands-400.woff (from https://nerofxinvest.com/home/css/style.css)
+01:52:52	Error: 	"Not Found" (404) at link https://nerofxinvest.com/htdocs_error/style.css (from https://nerofxinvest.com/home/serv/stock.html)
+01:52:53	Error: 	"Not Found" (404) at link https://nerofxinvest.com/htdocs_error/something-lost.png (from https://nerofxinvest.com/home/serv/stock.html)
+01:53:10	Error: 	"error:00000001:lib(0):func(0):reason(1)" (-5) after 2 retries at link https://code.tidio.co:443/39xy1faan2fodypi8jymfd9jehbqqnwh.js (from https://nerofxinvest.com/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 29 seconds : 645 links scanned, 620 files written (15589855 bytes overall) [8449670 bytes received at 21721 bytes/sec], 11037279 bytes transferred using HTTP compression in 583 files, ratio 29%, 27.9 requests per connection
+(16 errors, 9 warnings, 0 messages)
